@@ -3,79 +3,90 @@
 	margin: 0;
 }
 
+div#menubg {
+ 	height: 35px;
+ 	border: 1px solid #C9D7F1;
+}
+
 div#menu {
 	margin: auto;
 	width: 980px;
+	padding-top: 8px;
 }
 
 ul#topnav {
-	margin: 0;
-	float: left;
 	width: 100%;
 	list-style: none;
-	font-size: 1.1em;
-	background: red;
+	font-size: 1em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
 }
 
 ul#topnav li {
 	float: left;
 	margin: 0;
-	padding: 0;
 	position: relative; /*--Important--*/
 }
 
 ul#topnav li a {
 	float: left;
+	text-decoration: none;
+			color: #666666;
 	/*text-indent: -9999px; /*--Push text off of page--*/
-	height: 44px;
+	/*height: 60px;*/
 }
 
 ul#topnav li:hover a,ul#topnav li a:hover {
 	background-position: left bottom;
 }  /*--Hover State--*/
 
-ul#topnav a.home {
-	background: url(nav_home.png) no-repeat;
-	width: 78px;
+ul#topnav a div.menudiv {
+	background: red;
+	background: url("../img/tab.png") no-repeat right;
+	padding-right: 10px;
+	margin-left: 10px;
 }
 
-ul#topnav a.products {
-	background: url(nav_products.png) no-repeat;
-	width: 117px;
+ul#topnav a div.menudiv img {
+	margin: 9px 0 0 5px;
+	float: right;
 }
 
-ul#topnav a.sale {
-	background: url(nav_sale.png) no-repeat;
-	width: 124px;
+ul#topnav a div.menudivlast {
+	background: none !important;
 }
 
-ul#topnav a.community {
-	background: url(nav_community.png) no-repeat;
-	width: 124px;
+ul#topnav a.menuli {
+
 }
 
-ul#topnav a.store {
-	background: url(nav_store.png) no-repeat;
-	width: 141px;
-}
+ul#topnav span.tab {
+	float: left;
+	height: 13px;
+	width: 1px;
+	margin-top: 4px;
+	padding: 0 10px 0 10px;
+	background: url("../img/tab.png") no-repeat top;
+	}
 
 ul#topnav li .sub {
 	position: absolute; /*--Important--*/
-	top: 44px;
+	top: 35px;
 	left: 0;
 	z-index: 99999;
-	background: #344c00 url(sub_bg.png) repeat-x;
+	background: #FFF;
 	/*--Background gradient--*/
 	padding: 20px 20px 20px;
 	float: left;
+	border: thick  groove rgb(255,0,255);
 	/*--Bottom right rounded corner--*/
 	-moz-border-radius-bottomright: 5px;
 	-khtml-border-radius-bottomright: 5px;
-	-webkit-border-bottom-right-radius: 5px;
+	-webkit-border-radius: 3px;
 	/*--Bottom left rounded corner--*/
 	-moz-border-radius-bottomleft: 5px;
 	-khtml-border-radius-bottomleft: 5px;
-	-webkit-border-bottom-left-radius: 5px;
+	/*-webkit-border-bottom-left-radius: 5px;*/
 	display: none; /*--Hidden for those with js turned off--*/
 }
 
